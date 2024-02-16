@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cad Cam Systems - CNC Gear</title>
+    <link rel="icon" type="image/png" href="images/titellogoklein.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/cf1f895624.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- work at cnc gear popup -->
+
+    <div class="overlay" id="divOne">
+        <div class="wrapper">
+            <h2>Vacatures</h2>
+            <a href="#" class="close">&times;</a>
+            <div class="content">
+                <h4>Wij hebben op dit moment geen openstaande vacatures</h4>
+                <p>Onze organisatie staat er uiteraard altijd voor open om in contact te komen met kandidaten die denken
+                    van meerwaarde te kunnen zijn in één van onze bedrijfsprocessen. Om contact op te nemen mailt u
+                    naar:</p>
+                <div class="centered-mail">
+                    <a href="mailto:jellevanharsselaar@cnc-gear.nl" class="mail"> <i class="fa-solid fa-paper-plane"><span style="color: #e7e7e7;">--</span></i>jellevanharsselaar@cnc-gear.nl</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header-->
+
+    <div id="header">
+        <div id="top-menu">
+            <div class="container ">
+                <ul class="top-menu-links inline pull-right">
+                    <!-- <li>
+                        <a href="link bedrijf">
+                            Company </a>
+                    </li> -->
+                    <li>
+                        <a href="#divOne">Work at CNC-Gear</a>
+                    </li>
+                    <!-- <li>
+                        <a href="link members">
+                            &nbsp;&nbsp;Members </a>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <nav class="header-padding">
+                <div class="logo-container">
+                    <a href="index.html" class="logo">
+                        <img src="images/headerlogowhitelarger.png" alt="header-logo">
+                    </a>
+                </div>
+                <ul id="sidemenu">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="producten/producten.html">PRODUCTEN</a></li>
+                    <!-- <li><a href="referentie.html">REFERENTIES</a></li> -->
+                    <li><a href="support.html">SUPPORT</a></li>
+                    <li><a href="bedrijf.html">BEDRIJF</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>CAD CAM SYSTEMS</p>
+                <h1><span class="where">Let's</span> connect!<br><span class="meets"> Reach</span> out to us today</h1>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i><a href="mailto:support@cnc-gear.nl" style="color: white; text-decoration: none;">support@cnc-gear.nl</a></p>
+                    <p><i class="fa-solid fa-phone"></i><a href="tel:0031541858391" style="color: white; text-decoration: none;">+31 (0)541 858391</a></p>
+                    <p><i class="fa-solid fa-location-dot"></i>Bezoekadres:<br>
+                    <pre>            Ambachtsstraat 1A<br>            7591 BE Denekamp<br>            Nederland<br><br>       Postadres:<br>            Mekkelhorsterstraat 31A<br>            7588 PL Beuningen<br>            Nederland</pre>
+                    </p>
+
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/company/cnc-gear/?originalSubdomain=nl" target="_blank"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.youtube.com/@cncgear6510" target="_blank"><i
+                                class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="contact-right">
+                    <form onsubmit="sendMail(); reset(); return false;">
+                        <input type="text" name="name" placeholder="Naam*" class="contact-inputs" required>
+                        <input type="text" name="company-name" placeholder="Bedrijf*" class="contact-inputs">
+                        <input type="text" name="telephone" placeholder="Telefoonnummer*" class="contact-inputs"
+                            required>
+                        <input type="email" name="email" placeholder="E-mailadres*" required>
+                        <textarea id="message" rows="6" placeholder="Bericht*"></textarea>
+                        <button type="submit" class="btn btn2">Verstuur</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright <i class="fa-regular fa-copyright"></i> CNC Gear B.V. 2024</p>
+        </div>
+    </div>
+
+
+    <script src="sidemenu.js"></script>
+
+</body>

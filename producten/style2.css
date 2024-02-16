@@ -1,0 +1,671 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+html, body {
+    scroll-behavior: smooth;
+    background: #fff;
+    color: #000; 
+}
+body{
+    background: white;
+    color: #fff;
+}
+
+
+
+/* ------------ Homepage ------------ */
+#header-products{
+    width: 100%;
+    height: 60vh;
+    background-image: url(images/achtergrond.gif);
+    background-size: cover;
+    background-position: center;
+}
+
+.container{
+    padding: 0;
+}
+
+.header-padding{
+    padding-top: 50px;
+    position: fixed;
+    top: 2.029%;
+}
+
+nav {
+    width: 100%;
+    height: 75px; 
+    padding: 10px 10%; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #001a1c;
+}
+
+
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0px 20px;
+}
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    position: relative;
+    
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #00d2d2;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+.header-text{
+    margin-top: 5%; 
+    font-size: 20px;
+    text-align: center;
+}
+
+.header-text p{
+    padding-top: 3%;
+    font-weight: lighter;
+    letter-spacing: 23px;
+}
+
+.header-text h1{
+    font-size: 70px;
+    margin-top: 20px;
+}
+
+.header-text h1 span {
+    font-weight: 900;
+}
+
+span.where {
+    color: #00d2d2; 
+}
+
+span.meets {
+    color: #00ffff; 
+}
+
+/* ----------- Blauwe header   --------- */
+
+#top-menu{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 18px;
+    background-color: #00d2d2;
+    z-index: 999;
+}
+
+.top-menu-links {
+    list-style: none;
+    margin: 0;
+    margin-right: 210px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.top-menu-links li {
+    margin-left: 30px; /* Adjust margin between items */
+}
+
+.top-menu-links li a {
+    text-decoration: none;
+    color: #000; /* Set font color to black */
+}
+
+/* ----------- Keuze knoppen bij producten  --------- */
+
+.software-nav.container {
+    padding-top: 50px;
+    display: flex;
+    justify-content: center; /* Center items horizontally */    display: flex;
+    justify-content: center; /* Center items horizontally */
+    margin: 0 auto; /* Center container horizontally */
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.1); /* Apply shadow to the container */
+    border-radius: 10px; /* Add border radius to soften the edges */
+}
+
+.software-white-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Align items in a row */
+    flex-wrap: wrap; /* Allow wrapping if content overflows */
+}
+
+.menu-product{
+    width: 200px;
+    height: 150px;
+    margin-top: 80px; /* Adjustable spacing above icons */
+    margin-right: 20px; /* Adjust the space between icons horizontally */
+    margin-bottom: 50px;
+    display: flex; /* Align icon and text vertically */
+    flex-direction: column; /* Stack icon and text vertically */
+    align-items: center; /* Center items horizontally */
+    text-align: center; /* Center text horizontally */
+    background-color: #fff; /* Add background color to create a contrasting box */
+    padding: 20px; /* Add padding for spacing */
+    border-radius: 8px; /* Add border radius to soften the edges */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); /* Apply shadow to the boxes */
+}
+
+.menu-product a, .menu-product_img{
+    justify-content: center;
+}
+
+.menu-product a {
+    text-decoration: none;
+    color: black; /* Set text color to white */
+}
+
+.menu-product_img {
+    width: 50px; /* Adjust icon width */
+    height: 50px; /* Adjust icon height */
+    margin-bottom: 10px; /* Adjust spacing between icon and text */
+}
+
+.menu-product span {
+    font-weight: bold; /* Make text bold */
+}
+
+/* Informatie aanvraag knop */
+
+.box{
+    text-align: center;
+    margin-top: 20px;
+    margin-right: 220px;
+}
+.button{
+    font-size: 1em;
+    padding: 15px 35px;
+    color: #001a1c;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    background: #00d2d2;
+    border-radius: 10px;
+    display: inline-block;
+}
+.overlay{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.8);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 9999;
+}
+
+.overlay:target{
+    visibility: visible;
+    opacity: 1;
+}
+
+.wrapper{
+    margin: 70px auto;
+    padding: 20px;
+    background: #e7e7e7;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 2s ease-in-out;
+}
+
+.wrapper h2{
+    margin-top: 0;
+    color: #333;
+}
+
+.wrapper .close{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.wrapper .content{
+    max-height: 30%;
+    overflow: auto;
+}
+
+.container-button{
+    border-radius: 5px;
+    background-color: #e7e7e7;
+    padding: 20px 0;
+}
+
+form label{
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+input[type=text], textarea, input[type=email]{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+form .btn2{
+    padding: 15px 50px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+    margin-left: 365px;
+    background-color: #e7e7e7;
+}
+
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #003c3c;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #000;
+    transition: background 0.5s;
+}
+.btn:hover{
+    background: #006060;
+}
+
+
+
+.wrapper-two{
+    margin: 70px auto;
+    padding: 20px;
+    background: #e7e7e7;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 2s ease-in-out;
+}
+
+.wrapper-two h2{
+    margin-top: 0;
+    text-align: center;
+    color: #333;
+}
+
+.wrapper-two .close{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.wrapper-two .content-two{
+    max-height: 30%;
+    overflow: auto;
+}
+.content-two h4{
+    padding-top: 20px;
+    text-align: center;
+    color: #333;
+}
+
+.content-two p{
+    padding-top: 20px;
+    text-align: center;
+    color: #333;
+}
+
+.centered-mail {
+    text-align: center;
+    padding-top: 20px; /* Adjust the padding as needed */
+}
+
+.centered-mail a {
+    text-decoration: none; /* Remove underline */
+    color: #00d2d2;
+}
+
+/* Plaatje en tekst 2d nesting */
+
+.section {
+    display: flex;
+    justify-content: space-between; 
+}
+
+.title, .products, .image {
+    margin-top: 100px;
+    flex-basis: calc(33.33% - 20px); 
+    padding: 0 20px; 
+    background-color: white;
+    color: black; 
+}
+
+.title{
+    padding-left: 300px;
+    font-size: 20px;
+}
+
+.image{
+    padding-right: 300px;
+}
+
+.container {
+    flex-wrap: wrap; 
+}
+
+.subcategorie-grid {
+    width: 100%;
+    display: flex;
+    border-bottom: 1px solid rgb(184, 183, 183);
+}
+
+.title, .products, .image {
+    margin-bottom: 20px; 
+}
+
+.subcategorie-grid > div {
+    flex-grow: 1; 
+}
+
+.subcategorie-grid .image {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.subcategorie-grid img {
+    max-width: 270px; 
+}
+
+.subcategorie-grid .title{
+    flex: 2;
+}
+
+.subcategorie-grid .products{
+    flex: 2;
+}
+
+.subcategorie-grid .image {
+    flex: 1;
+}
+
+.name{
+    font-weight: bold;
+    padding-bottom: 6px;
+}
+.text{
+    padding-bottom: 30px;
+    font-size: 13px;
+}
+
+.products{
+    padding-right: 100px;
+}
+.circle {
+    display: flex;
+    align-items: center; 
+}
+
+.circle img {
+    padding-top: 30px;
+    height: auto; 
+    margin-right: 10px; 
+    padding-bottom: 30px;
+}
+
+.circle .text {
+    flex-grow: 1; 
+}
+
+.circle h3 {
+    margin: 0; 
+    padding-top: 4px;
+    padding-left: 10px;
+}
+
+
+
+/* Copyright */
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #001a1c;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+/* ///////////// Producten \\\\\\\\\\\\\ */
+
+/* ----------- Keuze knoppen bij producten  --------- */
+
+.buttons-container-producten ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; 
+
+}
+
+.buttons-container-producten ul li {
+    margin-top: 65px;
+    margin-right: 100px; 
+     text-align: center;
+}
+
+.buttons-container-producten ul li:last-child {
+    margin-right: 0; 
+}
+
+.buttons-container-producten ul li a {
+    text-decoration: none;
+    color: #fff; 
+}
+
+.buttons-container-producten ul li img {
+    width: 75px;
+}
+
+.buttons-container-producten span{
+    font-weight: bold;
+}
+
+
+
+
+/* ------------ PhoneScreen ------------ */
+
+nav .fas{
+    display: none;
+}
+
+@media only screen and (max-width: 667px){
+
+
+    #header{
+        background-image: url(images/achtergrond.gif);
+    }
+
+    .wrapper{
+        width: 350px;
+        
+    }
+
+
+    .wrapper-two{
+        width: 350px;
+    }
+
+    .wrapper h2{
+        font-size: 25px;
+    }
+    nav.header-padding{
+        top: 0;
+        margin-top: 18px;
+        
+    }
+
+    .overlay{
+        margin-left: -30px;
+    }
+
+    .logo-container {
+        margin-right: 40px; /* Adjust margin as needed */
+        margin-left: -40px;
+    }
+
+    .top-menu-links{
+        margin-right: 235px;
+    }
+
+    .nav{
+        padding: 50px;
+    }
+    
+    .buttons.container ul {
+        display: none;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .logo-container {
+        margin-right: 40px; /* Adjust margin as needed */
+        margin-left: -40px;
+    }
+
+    .header-text{
+        margin-top: 24.5%; 
+        
+        font-size: 18px;
+    }
+
+    .header-text h1{
+        margin-top: 60px;
+        font-size: 35px;
+    }
+
+    ul.software-white-menu{
+        display: none;
+    }
+
+    nav .fas{
+        display: block;
+        font-size: 25px;
+    }
+
+    nav ul{
+        background: #00d2d2;
+        position: fixed;
+        top: 0;
+        right: -171px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+
+    nav ul .fas{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+    .title{
+        padding-left: 5px;
+        padding-right: -100px;
+        margin-right: 100px;
+    }
+
+    div.products{
+        display: none;
+    }
+    nav ul .fas{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+    .subcategorie-grid .image{
+        display: none;
+    }
+
+    .image-container{
+        width: 70px;
+        margin-left: 20px;
+    }
+    
+    .col img{
+        width: 97px;
+    }
+
+    .col p{
+        margin-left: 25px;
+        font-size: 11px;
+        text-align: center !important;
+    }
+
+    .section{
+        flex-direction: column;
+    }
+
+    .sub-title{
+        font-size: 40px;
+    }
+
+    form .btn2 {
+        margin-left: 150px;
+    }
+
+    .subcategorie-grid p{
+        padding-right: 10px;
+    }
+
+    .copyright{
+        font-size: 14px;
+    }
+}

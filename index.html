@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cad Cam Systems - CNC Gear</title>
+    <link rel="icon" type="image/png" href="images/titellogoklein.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/cf1f895624.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- <script src="json2xml.js"></script>
+    <script src="script.js"></script> -->
+    <style>
+        body {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- work at cnc gear popup -->
+
+    <div class="overlay" id="divOne">
+        <div class="wrapper">
+            <h2>Vacatures</h2>
+            <a href="#" class="close">&times;</a>
+            <div class="content">
+                <h4>Wij hebben op dit moment geen openstaande vacatures</h4>
+                <p>Onze organisatie staat er uiteraard altijd voor open om in contact te komen met kandidaten die denken van meerwaarde te kunnen zijn in één van onze bedrijfsprocessen. Om contact op te nemen mailt u naar:</p>
+                <div class="centered-mail">
+                    <a href="mailto:jellevanharsselaar@cnc-gear.nl" class="mail"><i class="fa-solid fa-paper-plane"><span style="color: #e7e7e7;">--</span></i>jellevanharsselaar@cnc-gear.nl</a>
+                </div>            
+            </div>
+        </div>
+    </div>
+
+    <!-- Header-->
+
+    <div id="header">
+        <div id="top-menu">
+            <div class="container ">
+                <ul class="top-menu-links inline pull-right">
+                    <!-- <li>
+                        <a href="link bedrijf">
+                            Company </a>
+                    </li> -->
+                    <li>
+                        <a href="#divOne">Work at CNC-Gear</a>
+                    </li>
+                    <!-- <li>
+                        <a href="link members">
+                            <img src="https://www.lantek.com/media/imagenes/member.png" width="12" height="12" />
+                            &nbsp;&nbsp;Members </a>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <nav class="header-padding">
+                <div class="logo-container">
+                    <a href="index.html" class="logo">
+                        <img src="images/headerlogowhitelarger.png" alt="header-logo">
+                    </a>
+                </div>
+                <ul id="sidemenu">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="producten/producten.html">PRODUCTEN</a></li>
+                    <!-- <li><a href="referentie.html">REFERENTIES</a></li> -->
+                    <li><a href="support.html">SUPPORT</a></li>
+                    <li><a href="bedrijf.html">BEDRIJF</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>CAD CAM SYSTEMS</p>
+                <h1><span class="where">Where</span> precision<br><span class="meets">meets</span> performance</h1>
+            </div>
+
+            <div class="buttons container">
+                <ul>
+                    <li class="menu-producto ">
+                        <a class="soft-cuadros" href="producten/producten.html#2DCADCAM">
+                            <img src="images/2DCADCAM_NESTING.png" class="menu-producto_img">
+                            <p class="superc">
+                                <span>2D CAD/CAM<br>Nesting</span>
+                            </p>
+                        </a>
+                    </li>
+                    <li class="menu-producto ">
+                        <a class="soft-cuadros" href="producten/producten.html#3DCADCAM">
+                            <img src="images/3DCADCAM_NESTING.png" class="menu-producto_img">
+                            <p class="superc">
+                                <span>3D CAD/CAM<br>Nesting</span>
+                            </p>
+                        </a>
+                    </li>
+                    <li class="menu-producto ">
+                        <a class="soft-cuadros" href="producten/producten.html#MES">
+                            <img src="images/MES.png" class="menu-producto_img">
+                            <p class="superc">
+                                <span>Manufacturing<br>Executions Systems</span>
+                            </p>
+                        </a>
+                    </li>
+                    <li class="menu-producto ">
+                        <a class="soft-cuadros" href="producten/producten.html#Qouting">
+                            <img src="images/QUOTING.png" class="menu-producto_img">
+                            <p class="superc">
+                                <span>Quoting & ERP<br>Software</span>
+                            </p>
+                        </a>
+                    </li>
+                    <li class="menu-producto ">
+                        <a class="soft-cuadros" href="producten/producten.html#Analytical">
+                            <img src="images/ANALYTICS.png" class="menu-producto_img">
+                            <p class="superc">
+                                <span>Analytical<br>Intelligence</span>
+                            </p>
+                        </a>
+                    </li>
+
+                    <li class="servis menu-producto">
+                        <a class="soft-cuadros" href="producten/producten.html#Data">
+                            <img src="images/DATA-INTEGRATION.png" class="menu-producto_img">
+                            <p class="superc">
+                                <span class="servicios-title">Data & Platforms<br>integration</span>
+                            </p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Missie & Visie -->
+
+    <div class="section" id="missievisie">
+        <div class="container">
+            <h2 class="text-center">Onze Missie & Visie</h2>
+            <p class="lead text-center"><span>Missie</span><br>
+                CNC Gear voorziet metaalverwerkende bedrijven in de Benelux en de westelijke deelstaten van <br>
+                Duitsland van kwalitatief hoogstaande CAD/CAM systemen, met de daarbij behorende
+                <br>professionele support en advies, tegen een betaalbare prijs.
+            </p>
+            <p class="lead text-center"><span>Visie</span><br>
+                CNC Gear is onderscheidend door een compleet CAD/CAM systeem te leveren voor metaalbewerkingmachines
+                <br>dat zonder maatwerk reeds voldoet in alle basisbehoeften, die continuïteit van de klant waarborgt.
+                Softwarekosten,
+                <br>waaronder consultancy, maatwerk, onderhoud en training worden daardoor tot een minimum beperkt.
+            </p>
+            <div class="row text-center">
+                <div class="col">
+                    <div class="image-container">
+                        <img src="images/LASER-CUT-CNC-GEAR.png" alt="">
+                        <p>250+ Machine Models<br>In de Benelux</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="image-container">
+                        <img src="images/FACTORY-EMBLEM-CNC-GEAR.png" alt="">
+                        <p>50+ Geavanceerde fabrieksimplementaties<br>In de Benelux</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="image-container">
+                        <img src="images/PEOPLE-EMBLEM-CNC-GEAR.png" alt="">
+                        <p>300+ Klanten<br>In  Benelux</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="newstitle">
+        <h2>Nieuws</h2>
+    </div>
+
+    <div class="section" id="News">
+
+        <!-- Nieuws artikel 1 -->
+
+        <div class="card">
+            <!-- Hieronder foto toevoegen -->
+            <img src="images/TS2024stand.png">
+            <!-- Titel van artikel -->
+            <h4>Technishow 2024</h4>
+            <!-- Datum en wie het heeft gemaakt -->
+            <div class="publishbydate">
+                <p>Denekamp</p>
+                <span>•</span>
+                <p>15/2/2024</p>
+            </div>
+            <!-- Beschrijving -->
+            <div class="Description">
+                Van dinsdag 12 tot en met vrijdag 15 maart neemt CNC Gear weer deel aan de Technishow in de jaarbeurs in
+                Utrecht. Naast
+                onze bekende software systemen introduceren wij de nieuwe Lantek Bend module in samenwerking met
+                Euromac. U kunt onze
+                stand vinden op plek C060 in Hal 7.
+
+            </div>
+        </div>
+
+        <!-- Nieuws artikel 2 -->
+
+        <div class="card">
+            <!-- Hieronder foto toevoegen -->
+            <img src="images/newwebsite.png">
+            <!-- Titel van artikel -->
+            <h4>Nieuwe website</h4>
+            <!-- Datum en wie het heeft gemaakt -->
+            <div class="publishbydate">
+                <p>Denekamp</p>
+                <span>•</span>
+                <p>12/2/2024</p>
+            </div>
+            <!-- Beschrijving -->
+            <div class="Description">
+                Om onze activiteiten nog beter met de Nederlandse metaalbewerkingsindustrie te kunnen communiceren
+                hebben wij geinvesteerd in
+                een nieuwe website. Op deze website vindt u een beknopte toelichting van het Lantek productportfolio en
+                kunt u per productgroep
+                meer informatie opvragen.
+            </div>
+        </div>
+
+        <!-- Nieuws artikel 3 -->
+
+        <div class="card">
+            <!-- Hieronder foto toevoegen -->
+            <img src="images/2023result.png">
+            <!-- Titel van artikel -->
+            <h4>Een succesvol 2023</h4>
+            <!-- Datum en wie het heeft gemaakt -->
+            <div class="publishbydate">
+                <p>Denekamp</p>
+                <span>•</span>
+                <p>10/1/2024</p>
+            </div>
+            <!-- Beschrijving -->
+            <div class="Description">
+                Wij kunnen terugkijken op een succesvol 2023 waarin wij samen met onze klanten en partners vele CAD/CAM
+                omgevingen hebben
+                mogen inrichten en optimaliseren. Er is op alle vlakken een mooie groei van 30% gerealiseerd en we zijn
+                ook voor 2024
+                positief gestemd. Met de verdere uitbreiding en proffesionelisering van ons team zetten we in op verdere
+                groei van CNC Gear en Lantek in de Benelux.
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ------------ Contact ------------ -->
+
+
+    <div id="contact">
+        <div class="container">
+            <div class="row-1">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i><a href="mailto:support@cnc-gear.nl" style="color: white; text-decoration: none;">support@cnc-gear.nl</a></p>
+                    <p><i class="fa-solid fa-phone"></i><a href="tel:0031541858391" style="color: white; text-decoration: none;">+31 (0)541 858391</a></p>
+                    <p><i class="fa-solid fa-location-dot"></i>Adres:<br>
+                    <pre>            Ambachtsstraat 1A<br>            7591 BE Denekamp<br>            Nederland<br><br></pre>
+                    </p>
+
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/company/cnc-gear/?originalSubdomain=nl" target="_blank"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.youtube.com/@cncgear6510" target="_blank"><i
+                                class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="contact-right">
+                    <form id="myform" method="post" action="mail.php">
+                        <input type="text" name="name" placeholder="Naam*" class="contact-inputs" required>
+                        <input type="text" name="company-name" placeholder="Bedrijf*" class="contact-inputs">
+                        <input type="text" name="telephone" placeholder="Telefoonnummer*" class="contact-inputs" required>
+                        <input type="email" name="email" placeholder="E-mailadres*" required>
+                        <textarea name="message" id="message" rows="6" placeholder="Bericht*"></textarea>
+                        <button type="submit" id="submit" class="btn btn2">Verstuur</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright <i class="fa-regular fa-copyright"></i> CNC Gear B.V. 2024</p>
+        </div>
+    </div>
+
+    <script src="sidemenu.js"></script>
+</body>
+
+</html>

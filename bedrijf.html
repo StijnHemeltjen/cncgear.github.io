@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cad Cam Systems - CNC Gear</title>
+    <link rel="icon" type="image/png" href="images/titellogoklein.png">
+    <link rel="stylesheet" href="stylebedrijf.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/cf1f895624.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- work at cnc gear popup -->
+
+    <div class="overlay" id="divOne">
+        <div class="wrapper">
+            <h2>Vacatures</h2>
+            <a href="#" class="close">&times;</a>
+            <div class="content">
+                <h4>Wij hebben op dit moment geen openstaande vacatures</h4>
+                <p>Onze organisatie staat er uiteraard altijd voor open om in contact te komen met kandidaten die denken
+                    van meerwaarde te kunnen zijn in één van onze bedrijfsprocessen. Om contact op te nemen mailt u
+                    naar:</p>
+                <div class="centered-mail">
+                    <a href="mailto:jellevanharsselaar@cnc-gear.nl" class="mail">jellevanharsselaar@cnc-gear.nl</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header-->
+
+    <div id="header">
+        <div id="top-menu">
+            <div class="container ">
+                <ul class="top-menu-links inline pull-right">
+                    <!-- <li>
+                        <a href="link bedrijf">
+                            Company </a>
+                    </li> -->
+                    <li>
+                        <a href="#divOne">Work at CNC-Gear</a>
+                    </li>
+                    <!-- <li>
+                        <a href="link members">
+                            &nbsp;&nbsp;Members </a>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <nav class="header-padding">
+                <a href="index.html">
+                    <img src="images/headerlogowhitelarger.png" alt="logo">
+                </a>
+                <ul id="sidemenu">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="producten/producten.html">PRODUCTEN</a></li>
+                    <!-- <li><a href="referentie.html">REFERENTIES</a></li> -->
+                    <li><a href="support.html">SUPPORT</a></li>
+                    <li><a href="bedrijf.html">BEDRIJF</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+        </div>
+
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/logowitachterblauw.png">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">CNC-Gear</h1>
+                        <p>
+                            Door jarenlange ervaring in de levering en de support op CAD/CAM systemen voor de
+                            plaatverwerkende industrie <br>in heel Europa is CNC Gear B.V.
+                            voor u een ervaren en betrouwbare partner om uw plaatbewerkingsmachines <br>zo efficiënt
+                            mogelijk te programmeren. CNC Gear B.V. kan u samen met
+                            haar, reeds jarenlange, partners voorzien <br>in de laatste technische mogelijkheden, met
+                            bijbehorende ondersteuning, voor de aansturing van uw
+                            laser-, plasma-, <br>waterjet, pons- nibbelmachines en boorzaag straten met uitbreidingen
+                            voor aansturing van automatische belading <br>en ontlading
+                            systemen en 3D bewerkingen.
+                        </p>
+
+                        <div class="tab-titles-cnc">
+                            <p class="tab-links-cnc active-link-cnc" onclick="openTabCnc('geschiedeniscnc', event)">
+                                Geschiedenis</p>
+                            <p class="tab-links-cnc" onclick="openTabCnc('vestigingcnc', event)">Locatie</p>
+                        </div>
+                        <div class="tab-contents-cnc active-tab-cnc" id="geschiedeniscnc">
+                            <ul>
+                                <li><span>2015</span><br>CNC Gear is opgericht in 2015 als eenmanszaak door huidig
+                                    directeur en eigenaar Jelle van Harsselaar. Met zijn eigen praktijkervaring in
+                                    de werkvoorbereiding en de bediening van machines plus meer dan 10 jaar ervaring in
+                                    de levering van CAD/CAM systemen wilde hij graag met
+                                    een andere visie de markt bedienen. Dit resulteerde in een missie en visie die
+                                    vandaag nog steeds voor ons geldt.
+
+                                    Inmiddels is CNC Gear een besloten vennootschap en wordt het continu doorontwikkeld
+                                    om in de marktvraag, "met standaardoplossingen
+                                    automatisering vraagstukken op te lossen", te kunnen voldoen.
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents-cnc" id="vestigingcnc">
+                            <ul>
+                                <li><span>Locatie</span><br>CNC Gear is gevestigd te Denekamp in de regio midden
+                                    Nederland. Wij beschikken over ruime ontvangst-, <br>training- en demoruimtes. U
+                                    bent, na het maken van een afspraak, van harte welkom om uw <br>bedrijfsprocessen
+                                    onder de loep te nemen.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1-lantek">
+                        <img src="images/lantek.webp">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">Lantek</h1>
+                        <p>
+                            Lantek is een volledig onafhankelijk softwarebedrijf dat
+                            CAD/CAM/MES/ERP-software-oplossingen biedt<br>voor de plaatwerk- en constructie industrie.
+                            De software systemen van Lantek worden volledig in eigen <br>beheer ontwikkeld, waardoor
+                            Lantek snel op de vragen uit de markt kan inspelen.
+                        </p>
+
+                        <div class="tab-titles-lantek">
+                            <p class="tab-links-lantek active-link-lantek" onclick="openTabLantek('geschiedenis')">
+                                Geschiedenis</p>
+                            <p class="tab-links-lantek" onclick="openTabLantek('vestigingen')">Vestigingen</p>
+                        </div>
+                        <div class="tab-contents-lantek active-tab-lantek" id="geschiedenis">
+                            <ul>
+                                <li><span>1986</span><br>Lantek werd opgericht in 1986 en het hoofdkantoor bevindt zich
+                                    in het Technological Park van Alava, <br>9 kilometer ten noorden van Vitoria-Gasteiz
+                                    (Baskenland, Spanje). Sindsdien is het bedrijf zich over <br>de hele wereld blijven
+                                    uitbreiden, en nu wordt het beschouwd als de wereldleider in CAD/CAM-software
+                                    <br>voor oxy-brandstof, plasma, laser, waterstraal, ponsen, en als pionier van
+                                    oplossingen voor <br>Management Software op aanvraag (MES/ERP). Daardoor hebben meer
+                                    dan 16.000 klanten in <br>meer dan 100 landen bij hun dagelijks werk vertrouwen in
+                                    Lantek.
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents-lantek" id="vestigingen">
+                            <ul>
+                                <li><span>Vestigingen en distributeurs</span><br>Lantek heeft vestigingen in de
+                                    Duitsland, Argentinië, Chili, China, Spanje, de VS, Frankrijk, India, Italië,
+                                    <br>Japan, Korea, Mexico, Nederland (“CNC Gear B.V.”), Polen, het Verenigd
+                                    Koninkrijk en Turkije.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>Copyright <i class="fa-regular fa-copyright"></i> CNC Gear B.V. 2024</p>
+        </div>
+
+        <script src="script.js"></script>
+</body>
+
+</html>
